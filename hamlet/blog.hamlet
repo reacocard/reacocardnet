@@ -1,0 +1,43 @@
+
+
+<nav #blognav
+    <ul
+        <li
+            <h3
+                Recent Posts
+            <ul
+                <li
+                    posts[0]
+        <li
+            <h3
+                Archive
+        <li
+            <h3
+                Categories
+        <li
+            <h3
+                Tags    
+
+
+
+$if False
+    <a name="hcompmgrpost"
+    <section .blogpost
+        <h3
+            Hcompmgr
+        <div .blogentry .inner
+            TODO
+        
+
+<article .blogpost
+    <header
+        <h3
+            posts[0]
+        <pubdate date="2011-04-12" pubdate
+            April 12, 2011
+    <div .blogentry
+        <p
+            Hello, and welcome to the blog.  Most blogs spend the first most introducing the author, but I already have <a href=@{AboutR}>an about page</a> that does just that, so I'll let you take a moment and read that. Done? Good.
+
+        <p
+            The purpose of this blog (and this site) is twofold. 1) To give me somewhere to post all the random things I create/discover/think about, and 2) to force me to work on my writing skills more.  Hopefully point 1 will be enough to keep point 2 going, my first couple blog attempts didn't live long. :)

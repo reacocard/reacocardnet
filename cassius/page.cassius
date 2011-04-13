@@ -1,0 +1,42 @@
+html
+    overflow-y: scroll
+
+body
+    background-color: #101010
+    max-width: 1200px
+    width: 85%
+    min-width:  900px
+    margin: 0
+    margin-left: auto
+    margin-right: auto
+    padding: 0
+    font-family: sans-serif
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+
+
+#wrapper
+    float: left
+    background-color: #eeeeee
+    padding: 0px
+    margin: 0
+    border-bottom-left-radius: 10px
+    border-bottom-right-radius: 10px
+
+section 
+    margin-top: 10px
+    float: left
+    margin: 0px
+    padding: 0px
+
+section > h3:first-child 
+    margin: 10px 10px 0px 10px
+    background-color: #cccccc
+    padding: 5px
+
+section > .inner
+    margin: 10px
+    padding: 0px
+
+a
+    color: #000000

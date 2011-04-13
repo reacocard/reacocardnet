@@ -1,0 +1,47 @@
+
+.blogpost
+    width: 75%
+    float: left
+    margin: 0
+    padding: 0
+
+.blogpost > header
+    margin: 10px 10px 0px 10px
+    background-color: #cccccc
+    padding: 5px
+    clear: both
+
+.blogpost > header > h3
+    display: inline-block
+    padding: 0
+    margin: 0
+    width: 50%
+
+.blogpost > header > pubdate
+    display: inline-block
+    padding: 0
+    margin: 0
+    width: 50%
+    text-align: right
+
+.blogentry
+    margin: 10px
+    padding: 0px
+    float: left
+
+#blognav
+    width: 25%
+    float: right
+    right: 0px
+    top: 0px
+
+#blognav > ul
+    list-style: none
+    margin: 0px
+    padding: 0px
+
+#blognav > ul > li > h3
+    margin: 10px
+    background-color: #cccccc
+    padding: 5px
+

@@ -1,0 +1,9 @@
+!!!
+<html lang="en">
+    <head>
+        <title>#{title}
+        <meta charset="UTF-8">
+        ^{headTags}
+    <body>
+        <div id="wrapper">
+            ^{bodyTags}

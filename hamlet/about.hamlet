@@ -1,0 +1,49 @@
+
+<section id="aboutaren"
+    <h3
+        About Aren Olson (reacocard)
+    <div .inner
+        <p
+            I am Aren Olson, a 21 year-old computer geek, currently a senior Computer Science major at <a href="http://www.simpson.edu">Simpson College</a>.
+        <p
+            A (non-exhaustive) list of things I like:
+            <ul
+                <li
+                    Computers (programming, building, fixing, yealling at...)
+                <li
+                    Open Source/Standards/Etc. (without (much) fanaticism)
+                <li
+                    Puzzles (both the ones with tiny pieces and the ones with logic... wait both kinds have those)
+                <li
+                    Bad Puns (they are all my fault)
+                <li
+                    Reading (mostly scifi/fantasy)
+                <li
+                    Singing (and music in general)
+                <li
+                    Video Games (gotta catch 'em all!)
+                <li
+                    Learning New Things (voluntarily)
+                <li
+                    Parentheses (by the dozen)
+            and dislike:
+            <ul
+                <li
+                    Writing (prose, not code, obviously)
+                <li
+                    Bad Interface Design (user and otherwise)
+                <li
+                    Not Having Anything Interesting To Do (a very specific breed of boredom - normal boredom is easily solved)
+        <p
+            Online I am ususally known as reacocard (who'd have guessed).
+        <p
+            This bio seems a bit short... oh well, I'll think of more later. Enjoy the site! :D
+    
+                    
+
+<section id="aboutsite"
+    <h3
+        About reacocard.net
+    <div .inner
+        <p
+            This site is built using <a href="http://www.yesodweb.com/">Yesod</a>, HTML5 and CSS3.  

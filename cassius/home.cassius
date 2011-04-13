@@ -1,0 +1,27 @@
+
+section
+    width: 50%
+
+#recentblog > ul 
+    list-style: none
+
+#recentblog > ul > li 
+    padding: 0
+    margin: 0
+    margin-bottom: 5px
+
+#recentblog > ul > li > h5 
+    line-height: 1.2em
+    max-height: 1.2em
+    overflow: hidden
+    padding: 0
+    margin: 0
+
+#recentblog > ul > li > p 
+    line-height: 1.2em
+    max-height: 3.6em
+    overflow: hidden
+    text-overflow: ellipsis
+    padding: 0
+    margin: 0
+

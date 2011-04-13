@@ -1,0 +1,104 @@
+
+<section style="width:100%"
+    <p .inner
+        Code projects I have either authored or contributed substantially to.
+
+<div #leftcolumn style="float:left;width:50%;padding:0;margin:0;"
+    <section
+        <h3
+            Exaile
+        <div .inner
+            <p
+                Exaile is a music manager and player for GTK+ written in Python. It incorporates automatic fetching of album art, lyrics fetching, Last.fm scrobbling, support for many portable media players, internet radio such as shoutcast, and tabbed playlists.
+            <p
+                <ul
+                    <li
+                        <a href="http://www.exaile.org"
+                            Homepage
+
+    <section
+        <h3
+            Hcompmgr
+        <div .inner
+            <p
+                An attempt at creating a compositor in haskell.  Currently unusable since texture_from_pixmap doesn't work right.
+            <p
+                <ul
+                    <li
+                        <a href="https://github.com/reacocard/hcompmgr"
+                            Hcompmgr
+                    <li>
+                        <a href="https://github.com/reacocard/glx"
+                            GLX haskell bindings
+                    <li>
+                        <a href="https://github.com/reacocard/x11-xfixes"
+                            Xfixes haskell bindings
+                    <li>
+                        <a href="https://github.com/reacocard/x11-xcomposite"
+                            Xcomposite haskell bindings
+                    <li>
+                        <a href="https://github.com/reacocard/x11-xdamage"
+                            Xdamage haskell bindings
+                    <li>
+                        <a href="http://community.haskell.org/~reacocard/X11/"
+                            Modified X11 haskell bindings
+
+
+    <section
+        <h3
+            Hncurses
+        <div .inner
+            <p
+                Better haskell bindings to Ncurses. Still immature, but I have plans...
+            <p
+                <ul
+                    <li
+                        <a href="https://github.com/reacocard/hncurses"
+                            Hncurses
+
+
+<div #rightcolumn style="float:left;width:50%;padding:0;margin:0;"
+    <section
+        <h3
+            Reacocard.net
+        <div .inner
+            <p
+                Not public yet, but the source code will be posted here eventually!
+
+
+
+    <section
+        <h3
+            Dotfiles
+        <div .inner
+            <p
+                A bunch of config files for applications I use daily, such as xmonad, xmobar, vim, and mplayer.
+            <p
+                <ul
+                    <li
+                        <a href="https://github.com/reacocard/dotfiles"
+                            Dotfiles
+
+    <section
+        <h3
+            Rockbox DB Python Library
+        <div .inner
+            <p
+                A preliminary attempt at making the Rockbox DB readable and updatable from desktop applications.  Originally intended for use in Exaile, to speed up using Rockbox PMPs, but currently defunct and unused. Might not even be valid on modern Rockbox builds.
+            <p
+                <ul
+                    <li
+                        <a href="http://www.rockbox.org/wiki/pub/Main/TagcacheDBFormat/rblib.py.txt"
+                            Source
+                    <li
+                        <a href="http://www.rockbox.org/wiki/TagcacheDBFormat"
+                            Wiki page describing DB format, with sources attached
+
+
+    $if False
+        <section
+            <h3
+                GTSPlus
+            <div .inner
+                <p
+                    TODO

@@ -1,0 +1,8 @@
+
+body > #wrapper > header
+    float: left
+    width: 100%
+    height: 100px
+    background-color: #888888
+    text-align: center
+    padding-top: 20px

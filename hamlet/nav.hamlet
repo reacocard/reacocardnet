@@ -1,0 +1,13 @@
+<nav id="navbar">
+    <ul class="menu">
+        $forall navRoute <- navRoutes
+            $if isCurrent navRoute
+                <li class="menuactive"
+                    <a href=@{navRoute}
+                        #{navTitle navRoute}
+            $else
+                <li
+                    <a href=@{navRoute}
+                        #{navTitle navRoute}
+
+
