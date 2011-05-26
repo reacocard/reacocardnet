@@ -4,12 +4,12 @@
         About Aren Olson (reacocard)
     <div .inner
         <p
-            I am Aren Olson, a 21 year-old computer geek, currently a senior Computer Science major at <a href="http://www.simpson.edu">Simpson College</a>.
+            I am Aren Olson, a 21 year-old computer geek. I recently graduated from <a href="http://www.simpson.edu">Simpson College</a> with a B.A. in Computer Science and a minor in Math.
         <p
             A (non-exhaustive) list of things I like:
             <ul
                 <li
-                    Computers (programming, building, fixing, yealling at...)
+                    Computers (programming, building, fixing, yelling at...)
                 <li
                     Open Source/Standards/Etc. (without (much) fanaticism)
                 <li
@@ -35,7 +35,7 @@
                 <li
                     Not Having Anything Interesting To Do (a very specific breed of boredom - normal boredom is easily solved)
         <p
-            Online I am ususally known as reacocard (who'd have guessed).
+            Online I am ususally known as reacocard (who'd have guessed). If for some reason you want to contact me, you can email me at <a href="mailto:reacocard@gmail.com">reacocard@gmail.com</a>.
         <p
             This bio seems a bit short... oh well, I'll think of more later. Enjoy the site! :D
     
@@ -46,4 +46,4 @@
         About reacocard.net
     <div .inner
         <p
-            This site is built using <a href="http://www.yesodweb.com/">Yesod</a>, HTML5 and CSS3.  
+            This site is built using <a href="http://www.yesodweb.com/">Yesod</a>, HTML5 and CSS3. Its source is available <a href="https://github.com/reacocard/reacocardnet">on Github</a>.

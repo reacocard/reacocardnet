@@ -1,5 +1,4 @@
-
-import Yesod(warpDebug)
+import Network.Wai.Handler.Warp (run)
 import ReacocardNet
 
-main = warpDebug 3000 ReacocardNet
+main = withReacocardNet $ run 3000

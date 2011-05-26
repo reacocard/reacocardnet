@@ -9,7 +9,7 @@
             Exaile
         <div .inner
             <p
-                Exaile is a music manager and player for GTK+ written in Python. It incorporates automatic fetching of album art, lyrics fetching, Last.fm scrobbling, support for many portable media players, internet radio such as shoutcast, and tabbed playlists.
+                Exaile is an open-source music manager and player for GTK+ written in Python.
             <p
                 <ul
                     <li
@@ -63,9 +63,12 @@
             Reacocard.net
         <div .inner
             <p
-                Not public yet, but the source code will be posted here eventually!
-
-
+                The source code for this very website.
+            <p
+                <ul
+                    <li
+                        <a href="https://github.com/reacocard/reacocardnet"
+                            Reacocardnet on Github
 
     <section
         <h3
@@ -84,7 +87,7 @@
             Rockbox DB Python Library
         <div .inner
             <p
-                A preliminary attempt at making the Rockbox DB readable and updatable from desktop applications.  Originally intended for use in Exaile, to speed up using Rockbox PMPs, but currently defunct and unused. Might not even be valid on modern Rockbox builds.
+                A preliminary attempt at making the Rockbox DB readable and updatable from desktop applications.  Originally intended for use in Exaile, to speed up using Rockbox PMPs, but currently unmaintained.
             <p
                 <ul
                     <li

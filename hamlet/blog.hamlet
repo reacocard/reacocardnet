@@ -1,25 +1,4 @@
 
-
-<nav #blognav
-    <ul
-        <li
-            <h3
-                Recent Posts
-            <ul
-                <li
-                    posts[0]
-        <li
-            <h3
-                Archive
-        <li
-            <h3
-                Categories
-        <li
-            <h3
-                Tags    
-
-
-
 <a name="hcompmgrpost"
 <article .blogpost
     <header

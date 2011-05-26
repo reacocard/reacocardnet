@@ -1,0 +1,7 @@
+*.un~
+LocalSettings.hs
+client_session_key.aes
+dist/
+debug
+*.hi
+*.o
