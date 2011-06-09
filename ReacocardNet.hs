@@ -9,14 +9,16 @@ import Yesod hiding (defaultLayout)
 import Database.Persist
 import Database.Persist.GenericSql
 import Text.Pandoc
+import Data.Text
 
 import Settings
+
+--import Blocks.Test1
 
 data ReacocardNet = ReacocardNet {
     connPool :: Settings.ConnectionPool
     }
 
-data BlogEntry = BlogEntry
 
 share [mkPersist, mkMigrate "migrateAll"] [persist|
     BlogPost
@@ -25,13 +27,15 @@ share [mkPersist, mkMigrate "migrateAll"] [persist|
         posted UTCTime Desc Gt Ge Lt Le Eq
 |]
 
-mkYesod "ReacocardNet" [parseRoutes|
+mkYesodData "ReacocardNet" [parseRoutes|
     / HomeR GET
     /about AboutR GET
     /code CodeR GET
 
     /blog BlogR GET
     /blog/post/#BlogPostId BlogPostR GET
+
+    /test TestR GET
 |]
 
 
@@ -53,16 +57,40 @@ defaultLayout contents = do
     mCurrentRoute <- getCurrentRoute
     PageContent title headTags bodyTags <- widgetToPageContent $ do
         addCassius $(cassiusFile "page")
+        addHamletHead [hamlet|<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">|]
         addWidget headerW
         addWidget $ navW mCurrentRoute
         addWidget contents
         addWidget footerW
     hamletToRepHtml $(hamletFile "page")
 
+panedLayout :: Int -> Widget () -> Widget () -> Html -> Handler RepHtml
+panedLayout percent left right title = defaultLayout $ do
+    let lpercent = show percent
+    let rpercent = show $ (100 :: Int) - percent
+    setTitle title
+    addWidget [hamlet|
+    <div .panedlayout .panedlayout_left_#{lpercent}
+        ^{left}
+    <div .panedlayout .panedlayout_right_#{rpercent}
+        ^{right}
+|]
+    addCassius [cassius|
+.panedlayout
+    float: left
+    margin: 0
+    padding: 0
+.panedlayout_left_#{lpercent}
+    width: #{lpercent}%
+.panedlayout_right_#{rpercent}
+    width: #{rpercent}%
+|]
+
+
 navRoutes :: [ReacocardNetRoute]
 navRoutes = [HomeR, AboutR, BlogR, CodeR]
 
-navTitle :: Route ReacocardNet -> String
+navTitle :: Route ReacocardNet -> Text
 navTitle HomeR = "Home"
 navTitle AboutR = "About"
 navTitle BlogR = "Blog"
@@ -90,69 +118,4 @@ footerW = do
     addCassius $(cassiusFile "footer")
     addHamlet $(hamletFile "footer")
 
-getHomeR :: Handler RepHtml
-getHomeR = defaultLayout $ do
-    setTitle "Home - Reacocard.net"
-    addCassius $(cassiusFile "home")
-    addHamlet $(hamletFile "home")
 
-getAboutR :: Handler RepHtml
-getAboutR = defaultLayout $ do
-    setTitle "About Me - Reacocard.net"
-    addCassius $(cassiusFile "about")
-    addHamlet $(hamletFile "about")
-
-getCodeR :: Handler RepHtml
-getCodeR = defaultLayout $ do
-    setTitle "Code - Reacocard.net"
-    addCassius $(cassiusFile "code")
-    addHamlet $(hamletFile "code")
-
-
-blogPostDateFormat :: String -> BlogPost -> String
-blogPostDateFormat fmt post = formatTime defaultTimeLocale fmt $ blogPostPosted post
-
-blogPostDateFormatPubdate :: BlogPost -> String
-blogPostDateFormatPubdate = blogPostDateFormat "%F"
-
-blogPostDateFormatPubdatestr :: BlogPost -> String
-blogPostDateFormatPubdatestr = blogPostDateFormat "%B %e, %Y"
-
-blogPostBodyHtml :: BlogPost -> Html
-blogPostBodyHtml post = preEscapedString
-                    $ writeHtmlString defaultWriterOptions 
-                    $ readMarkdown defaultParserState 
-                    $ blogPostBody post
-
-getBlogPostR :: BlogPostId -> Handler RepHtml
-getBlogPostR postid = do
-    mPost <- runDB $ get postid
-    case mPost of
-        Nothing -> defaultLayout $ do
-            setTitle "Not Found - Reacocard.net"
-            addHamlet [hamlet|Resource not found|]
-        Just post -> defaultLayout $ do
-            setTitle $ toHtml $ (blogPostTitle post) ++ " - Blog - Reacocard.net"
-            addCassius $(cassiusFile "blog")
-            addHamlet $(hamletFile "blognav")
-            addHamlet $(hamletFile "blogpost")
-
-getBlogR :: Handler RepHtml
-getBlogR = do
-    posts <- runDB $ selectList
-        []
-        [BlogPostPostedDesc] 
-        0 0
-    defaultLayout $ do
-        setTitle "Blog - Reacocard.net"
-        addCassius $(cassiusFile "blog")
-        addHamlet $(hamletFile "blognav")
-        mapM_ (\r@(postid, post) -> addHamlet $(hamletFile "blogpost")) posts
-
-
-
-withReacocardNet :: (Application -> IO a) -> IO a
-withReacocardNet f = Settings.withConnectionPool $ \pool -> do
-    runConnectionPool (runMigration migrateAll) pool
-    let h = ReacocardNet pool
-    toWaiApp h >>= f

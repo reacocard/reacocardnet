@@ -1,10 +1,10 @@
-<article .blogpost
+<article .blockW .blogpost
     <header
         <h3
             <a href=@{BlogPostR postid}
                 #{blogPostTitle post}
         <pubdate date=#{blogPostDateFormatPubdate post} pubdate
             #{blogPostDateFormatPubdatestr post}
-    <div .blogentry
+    <div .inner .blogentry
         #{blogPostBodyHtml post}
 

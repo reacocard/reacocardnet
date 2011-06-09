@@ -1,4 +1,4 @@
 import Network.Wai.Handler.Warp (run)
-import ReacocardNet
+import Controller
 
 main = withReacocardNet $ run 3000

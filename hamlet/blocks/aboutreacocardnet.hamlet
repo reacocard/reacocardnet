@@ -1,0 +1,8 @@
+
+<section .blockW
+    <header
+        <h3
+            About reacocard.net
+    <div .inner
+        <p
+            This site is built using <a href="http://www.yesodweb.com/">Yesod</a>, HTML5 and CSS3. Its source is available <a href="https://github.com/reacocard/reacocardnet">on Github</a>.

@@ -1,0 +1,13 @@
+<section .blockW
+    <header
+        <h3
+             Exaile
+    <div .inner
+        <p
+            Exaile is an open-source music manager and player for GTK+ written in Python.
+        <p
+            <ul
+                <li
+                    <a href="http://www.exaile.org"
+                        Homepage
+

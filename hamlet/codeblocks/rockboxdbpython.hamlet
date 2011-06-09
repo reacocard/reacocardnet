@@ -1,0 +1,16 @@
+<section .blockW
+    <header
+        <h3
+            Rockbox DB Python Library
+    <div .inner
+        <p
+            A preliminary attempt at making the Rockbox DB readable and updatable from desktop applications.  Originally intended for use in Exaile, to speed up using Rockbox PMPs, but currently unmaintained.
+        <p
+            <ul
+                <li
+                    <a href="http://www.rockbox.org/wiki/pub/Main/TagcacheDBFormat/rblib.py.txt"
+                        Source
+                <li
+                    <a href="http://www.rockbox.org/wiki/TagcacheDBFormat"
+                        Wiki page describing DB format, with sources attached
+

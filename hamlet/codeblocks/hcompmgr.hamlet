@@ -1,0 +1,30 @@
+
+<section .blockW
+    <header
+        <h3
+            Hcompmgr
+    <div .inner
+        <p
+            An attempt at creating a compositor in haskell.  Currently unusable since texture_from_pixmap doesn't work right.
+        <p
+            <ul
+                <li
+                    <a href="https://github.com/reacocard/hcompmgr"
+                        Hcompmgr
+                <li>
+                    <a href="https://github.com/reacocard/glx"
+                        GLX haskell bindings
+                <li>
+                    <a href="https://github.com/reacocard/x11-xfixes"
+                        Xfixes haskell bindings
+                <li>
+                    <a href="https://github.com/reacocard/x11-xcomposite"
+                        Xcomposite haskell bindings
+                <li>
+                    <a href="https://github.com/reacocard/x11-xdamage"
+                        Xdamage haskell bindings
+                <li>
+                    <a href="http://community.haskell.org/~reacocard/X11/"
+                        Modified X11 haskell bindings
+
+

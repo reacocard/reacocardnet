@@ -1,0 +1,14 @@
+
+<section .blockW
+    <header
+        <h3
+            Dotfiles
+    <div .inner
+        <p
+            A bunch of config files for applications I use daily, such as xmonad, xmobar, vim, and mplayer.
+        <p
+            <ul
+                <li
+                    <a href="https://github.com/reacocard/dotfiles"
+                        Dotfiles
+

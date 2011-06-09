@@ -1,7 +1,7 @@
-
-<section id="aboutaren"
-    <h3
-        About Aren Olson (reacocard)
+<section .blockW
+    <header
+        <h3
+            About Aren Olson (reacocard)
     <div .inner
         <p
             I am Aren Olson, a 21 year-old computer geek. I recently graduated from <a href="http://www.simpson.edu">Simpson College</a> with a B.A. in Computer Science and a minor in Math.
@@ -38,12 +38,4 @@
             Online I am ususally known as reacocard (who'd have guessed). If for some reason you want to contact me, you can email me at <a href="mailto:reacocard@gmail.com">reacocard@gmail.com</a>.
         <p
             This bio seems a bit short... oh well, I'll think of more later. Enjoy the site! :D
-    
-                    
 
-<section id="aboutsite"
-    <h3
-        About reacocard.net
-    <div .inner
-        <p
-            This site is built using <a href="http://www.yesodweb.com/">Yesod</a>, HTML5 and CSS3. Its source is available <a href="https://github.com/reacocard/reacocardnet">on Github</a>.

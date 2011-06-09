@@ -1,15 +1,9 @@
-<section id="recentblog">
-    <h3>Recent blog posts
-    <p .inner
-        Not implemented yet. Click the tab above to get at them.
-        
-
-<section id="minibio"
-    <h3
-        What is this site?
+<section .blockW
+    <header
+        <h3
+            What is this site?
     <div .inner
         <p
             Reacocard.net is the online home of Aren Olson, a 21-year-old computer geek.  Here you can find information on his various interests and activities.
         <p
             Reacocard.net is still very much under construction. Beware of Lorem Ipsum!
-
